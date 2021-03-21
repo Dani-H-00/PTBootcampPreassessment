@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel='stylesheet' type='text/css' href='css/styles.css'>
+
+        <title>PTB | Quick Math</title>
+    </head>
+    <body>
+        <div class='logo'>
+            <image id='logo-image' src='images/Magenta-TMobile-Logo.png'></image>
+        </div>
+
+        <div class='container'>
+            <h2>P&T Bootcamp Assessment Project</h2>
+            <h3>Lets Do Some Quick Math!</h3>
+            <p>Enter two numbers and select an operation from the list to perform a calculation.</p>
+
+            <div class='equation-container'>
+                <input type='number' id='operand-left' class='operand' placeholder='Enter a number'>
+                <select id='operators' class='operators'>
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    <option value='/'>/</option>
+                    <option value='*'>*</option>
+                </select>
+                <input type='number' id='operand-right' class='operand' placeholder='Enter a number'>
+                <span><label id='equal-sign'>=</label></span>
+                <span><label id='result'>0</label></span>
+            </div>
+
+            <div class='submit'>
+                <input type='submit' id='submit-button' value='Submit' onclick='calculateEquation()'>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type='text/javascript' src='js/index.js'></script>
