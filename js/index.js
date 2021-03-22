@@ -37,8 +37,11 @@ class Equation {
             result = left - right;
         } else if (operation === '/') {
             result = left / right;
+            result = result.toFixed(2);
         } else if (operation === '*') {
             result = left * right;
+        } else if (operation === '%') {
+            result = left % right;
         }
 
         return result;
